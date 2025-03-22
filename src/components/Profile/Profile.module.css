@@ -1,162 +1,90 @@
 /* Стилі для профілю */
 .profile {
   background-color: white;
-  border: 2px solid black; /* чорний контур */
-  border-radius: 10px; /* заокруглені кути */
-  width: 600px; /* ще більша ширина профілю */
-  padding: 50px; /* ще більші відступи */
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 600px;
+  padding: 50px;
   text-align: center;
-  margin: 30px auto; /* центроване по горизонталі */
+  margin: 30px auto;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: 750px; /* ще більша висота профілю */
-  position: relative; /* додано для позиціонування статистики */
+  align-items: center;
+  position: relative;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Додаємо тінь для стилю */
+  overflow: hidden; /* Запобігає виходу елементів за межі */
 }
 
 /* Стилі для аватарки */
 .avatar {
-  width: 300px; /* ще більший аватар */
-  height: 300px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
-  background-color: #555; /* темно-сірий фон */
-  margin-bottom: 40px;
-  margin-left: auto;
-  margin-right: auto;
+  background-color: #555;
+  margin-bottom: 20px;
 }
 
 /* Стилі для імені користувача */
 .name {
-  font-size: 60px; /* ще більший шрифт */
+  font-size: 40px;
   font-weight: bold;
   color: black;
-  margin-top: 10px;
+  margin: 10px 0;
 }
 
 /* Стилі для тегу користувача */
 .tag {
-  font-size: 40px; /* ще більший шрифт */
-  color: #777; /* сірий колір */
-  margin-top: 10px;
+  font-size: 20px;
+  color: #777;
+  margin: 5px 0;
 }
 
 /* Стилі для локації */
 .location {
-  font-size: 40px; /* ще більший шрифт */
-  color: #777; /* сірий колір */
-  margin-top: 10px;
+  font-size: 20px;
+  color: #777;
+  margin-bottom: 20px;
 }
 
-/* Стилі для блоку заголовка */
-.profileHeader {
+/* Контейнер опису профілю */
+.description {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Стилі для блоку статистики */
+.stats {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f1f1f1;
+  border-radius: 0 0 10px 10px;
+  width: 100%;
+  padding: 15px 0;
+  border-top: 2px solid #ccc;
+}
+
+/* Стилі для кожного елемента статистики */
+.stats li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   flex: 1;
-  display: flex;
-  flex-direction: column; /* елементи повинні йти вертикально */
-  align-items: center; /* вирівнювання по центру */
-  justify-content: flex-start; /* вирівнювання елементів в верхній частині */
 }
 
-/* Стилі для блоку статистики */
-.stats {
-  display: flex;
-  margin-top: 0;
-  background-color: #f1f1f1; /* світло-сірий фон */
-  border-radius: 0 0 10px 10px; /* заокруглені кути тільки знизу */
-  padding: 0;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  border-top: 2px solid #ccc; /* лінія між профілем і статистикою */
-  height: 200px; /* ще більша висота статистики */
-  display: flex;
-  justify-content: space-evenly; /* рівномірно розподіляємо елементи */
+/* Стилі для назв статистики */
+.label {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 5px;
 }
 
-.stats {
-  display: flex;
-  margin-top: 0;
-  background-color: #f1f1f1; /* світло-сірий фон */
-  border-radius: 0 0 10px 10px; /* заокруглені кути тільки знизу */
-  padding: 0;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  border-top: 2px solid #ccc; /* лінія між профілем і статистикою */
-  height: 200px; /* висота статистики */
-  display: flex;
-  justify-content: space-evenly; /* рівномірно розподіляємо елементи */
-}
-
-/* Стилі для блоку статистики */
-.stats {
-  display: flex;
-  justify-content: space-between; /* рівномірний розподіл колонок */
-  margin-top: 0;
-  background-color: #f1f1f1; /* світло-сірий фон */
-  border-radius: 0 0 10px 10px; /* заокруглені кути тільки знизу */
-  padding: 0;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  border-top: 2px solid #ccc; /* лінія між профілем і статистикою */
-  height: 150px; /* висота статистики */
-}
-/* Стилі для блоку статистики */
-.stats {
-  display: flex;
-  justify-content: space-between; /* рівномірний розподіл колонок */
-  margin-top: 0;
-  background-color: #f1f1f1; /* світло-сірий фон */
-  border-radius: 0 0 10px 10px; /* заокруглені кути тільки знизу */
-  padding: 0;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  border-top: 2px solid #ccc; /* лінія між профілем і статистикою */
-  height: 150px; /* висота статистики */
-}
-
-/* Стилі для блоку статистики */
-.stats {
-  display: flex;
-  justify-content: space-between; /* розподіл елементів по горизонталі */
-  margin-top: 0;
-  background-color: #f1f1f1; /* світло-сірий фон */
-  border-radius: 0 0 10px 10px; /* заокруглені кути тільки знизу */
-  padding: 0;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  border-top: 2px solid #ccc; /* лінія між профілем і статистикою */
-  height: 150px; /* висота статистики */
-}
-
-/* Стилі для карток статистики */
-.stat-item {
-  text-align: center;
-  flex: 1; /* кожен елемент займатиме однакову ширину */
-  padding: 25px; /* відступи */
-  border-right: 2px solid #555; /* темно-сіра вертикальна лінія між картками */
-}
-
-.stat-item:last-child {
-  border-right: none; /* прибираємо лінію для останнього елемента */
-}
-
-.stat-item span:first-child {
-  display: block;
-  font-size: 24px; /* збільшено шрифт для назви */
-  color: #555; /* чорний для назв */
-  margin-bottom: 10px; /* відступ між текстом */
-}
-
-.stat-item span:last-child {
-  font-size: 36px; /* збільшено шрифт для цифр */
+/* Стилі для значень статистики */
+.quantity {
+  font-size: 22px;
   font-weight: bold;
-  color: black; /* чорний для значень */
+  color: black;
 }

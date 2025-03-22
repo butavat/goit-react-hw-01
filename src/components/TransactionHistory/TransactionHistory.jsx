@@ -1,6 +1,7 @@
-// TransactionHistory.jsx (Поліпшення типізації)
+// TransactionHistory.jsx
 import React from 'react';
 import PropTypes from 'prop-types';
+import TransactionItem from './TransactionItem'; // Імпортуємо компонент
 import './TransactionHistory.css';
 
 const TransactionHistory = ({ items }) => (
@@ -14,11 +15,7 @@ const TransactionHistory = ({ items }) => (
     </thead>
     <tbody>
       {items.map(({ id, type, amount, currency }) => (
-        <tr key={id}>
-          <td>{type}</td>
-          <td>{parseFloat(amount).toFixed(2)}</td>
-          <td>{currency}</td>
-        </tr>
+        <TransactionItem key={id} type={type} amount={amount} currency={currency} />
       ))}
     </tbody>
   </table>
