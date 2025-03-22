@@ -1,0 +1,57 @@
+ul {
+  display: flex;
+  justify-content: space-between; /* Для рівномірного розподілу карток */
+  flex-wrap: wrap; /* Перенос карток на наступний рядок, якщо вони не поміщаються */
+  list-style-type: none;
+  padding: 0;
+  margin-top: 30px; /* Відступ між першою та другою частинами завдання */
+}
+
+li {
+  width: 18%; /* Встановлюємо ширину кожної картки (5 карток в одному ряді) */
+  margin-bottom: 20px; /* Відступ між картками */
+  padding: 10px;
+  text-align: center; /* Текст по центру */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 200px; /* Встановлюємо висоту картки */
+}
+
+img {
+  width: 50%; /* Картинка займає половину картки */
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 10px; /* Відступ між картинкою і текстом */
+  align-self: center; /* Центруємо картинку по горизонталі */
+}
+
+p {
+  margin: 5px 0;
+}
+
+.name {
+  font-size: 20px; /* Більший шрифт для імені */
+  font-weight: bold;
+}
+
+.status {
+  font-size: 12px; /* Менший шрифт для статусу */
+  margin-top: auto; /* Щоб статус був внизу картки */
+}
+
+.online {
+  color: green; /* Якщо друг онлайн, зелений */
+}
+
+.offline {
+  color: red; /* Якщо друг оффлайн, червоний */
+}
+
+/* Відступ між другім і третім завданням */
+.App {
+  margin-bottom: 30px; /* Відступ між завданнями */
+}

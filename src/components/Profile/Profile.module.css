@@ -1,0 +1,162 @@
+/* Стилі для профілю */
+.profile {
+  background-color: white;
+  border: 2px solid black; /* чорний контур */
+  border-radius: 10px; /* заокруглені кути */
+  width: 600px; /* ще більша ширина профілю */
+  padding: 50px; /* ще більші відступи */
+  text-align: center;
+  margin: 30px auto; /* центроване по горизонталі */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 750px; /* ще більша висота профілю */
+  position: relative; /* додано для позиціонування статистики */
+}
+
+/* Стилі для аватарки */
+.avatar {
+  width: 220px; /* ще більший аватар */
+  height: 220px;
+  border-radius: 50%;
+  background-color: #555; /* темно-сірий фон */
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Стилі для імені користувача */
+.name {
+  font-size: 60px; /* ще більший шрифт */
+  font-weight: bold;
+  color: black;
+  margin-top: 10px;
+}
+
+/* Стилі для тегу користувача */
+.tag {
+  font-size: 40px; /* ще більший шрифт */
+  color: #777; /* сірий колір */
+  margin-top: 10px;
+}
+
+/* Стилі для локації */
+.location {
+  font-size: 40px; /* ще більший шрифт */
+  color: #777; /* сірий колір */
+  margin-top: 10px;
+}
+
+/* Стилі для блоку заголовка */
+.profileHeader {
+  flex: 1;
+  display: flex;
+  flex-direction: column; /* елементи повинні йти вертикально */
+  align-items: center; /* вирівнювання по центру */
+  justify-content: flex-start; /* вирівнювання елементів в верхній частині */
+}
+
+/* Стилі для блоку статистики */
+.stats {
+  display: flex;
+  margin-top: 0;
+  background-color: #f1f1f1; /* світло-сірий фон */
+  border-radius: 0 0 10px 10px; /* заокруглені кути тільки знизу */
+  padding: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-top: 2px solid #ccc; /* лінія між профілем і статистикою */
+  height: 200px; /* ще більша висота статистики */
+  display: flex;
+  justify-content: space-evenly; /* рівномірно розподіляємо елементи */
+}
+
+.stats {
+  display: flex;
+  margin-top: 0;
+  background-color: #f1f1f1; /* світло-сірий фон */
+  border-radius: 0 0 10px 10px; /* заокруглені кути тільки знизу */
+  padding: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-top: 2px solid #ccc; /* лінія між профілем і статистикою */
+  height: 200px; /* висота статистики */
+  display: flex;
+  justify-content: space-evenly; /* рівномірно розподіляємо елементи */
+}
+
+/* Стилі для блоку статистики */
+.stats {
+  display: flex;
+  justify-content: space-between; /* рівномірний розподіл колонок */
+  margin-top: 0;
+  background-color: #f1f1f1; /* світло-сірий фон */
+  border-radius: 0 0 10px 10px; /* заокруглені кути тільки знизу */
+  padding: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-top: 2px solid #ccc; /* лінія між профілем і статистикою */
+  height: 150px; /* висота статистики */
+}
+/* Стилі для блоку статистики */
+.stats {
+  display: flex;
+  justify-content: space-between; /* рівномірний розподіл колонок */
+  margin-top: 0;
+  background-color: #f1f1f1; /* світло-сірий фон */
+  border-radius: 0 0 10px 10px; /* заокруглені кути тільки знизу */
+  padding: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-top: 2px solid #ccc; /* лінія між профілем і статистикою */
+  height: 150px; /* висота статистики */
+}
+
+/* Стилі для блоку статистики */
+.stats {
+  display: flex;
+  justify-content: space-between; /* розподіл елементів по горизонталі */
+  margin-top: 0;
+  background-color: #f1f1f1; /* світло-сірий фон */
+  border-radius: 0 0 10px 10px; /* заокруглені кути тільки знизу */
+  padding: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-top: 2px solid #ccc; /* лінія між профілем і статистикою */
+  height: 150px; /* висота статистики */
+}
+
+/* Стилі для карток статистики */
+.stat-item {
+  text-align: center;
+  flex: 1; /* кожен елемент займатиме однакову ширину */
+  padding: 20px; /* відступи */
+  border-right: 2px solid #555; /* темно-сіра вертикальна лінія між картками */
+}
+
+.stat-item:last-child {
+  border-right: none; /* прибираємо лінію для останнього елемента */
+}
+
+.stat-item span:first-child {
+  display: block;
+  font-size: 24px; /* збільшено шрифт для назви */
+  color: #555; /* чорний для назв */
+  margin-bottom: 10px; /* відступ між текстом */
+}
+
+.stat-item span:last-child {
+  font-size: 36px; /* збільшено шрифт для цифр */
+  font-weight: bold;
+  color: black; /* чорний для значень */
+}
