@@ -1,15 +1,15 @@
+// FriendListItem.jsx (Виправлення синтаксичної помилки)
 import React from 'react';
 import PropTypes from 'prop-types';
-
 
 const FriendListItem = ({ avatar, name, isOnline }) => {
   return (
     <div>
       <img src={avatar} alt={name} width="48" />
-      <p className="name">{name}</p> {/* Додаємо клас для імені */}
-          <p className={`status ${isOnline ? 'online' : 'offline'}`}> {/* Використовуємо бектики для шаблонних рядків */}
-  {isOnline ? 'Online' : 'Offline'}
-</p>
+      <p className="name">{name}</p>
+      <p className={`status ${isOnline ? 'online' : 'offline'}`}>
+        {isOnline ? 'Online' : 'Offline'}
+      </p>
     </div>
   );
 };

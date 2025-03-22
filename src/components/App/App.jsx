@@ -1,17 +1,16 @@
+// App.jsx (Виправлення назви пропса)
 import React from 'react';
-import Profile from '../Profile/Profile'; // Імпортуємо компонент Profile
-import userData from '../../userData.json'; // Імпортуємо дані про користувача
-import FriendList from '../FriendList/FriendList'; // Імпортуємо компонент FriendList
-import friends from '../../friends.json'; // Імпортуємо дані про друзів
-import TransactionHistory from '../TransactionHistory/TransactionHistory'; // Імпортуємо компонент TransactionHistory
-import transactions from '../../transactions.json'; // Імпортуємо дані про транзакції
+import Profile from '../Profile/Profile';
+import userData from '../../userData.json';
+import FriendList from '../FriendList/FriendList';
+import friends from '../../friends.json';
+import TransactionHistory from '../TransactionHistory/TransactionHistory';
+import transactions from '../../transactions.json';
 
 const App = () => {
   return (
     <div className="App">
       <h1>Домашнє завдання React HW-01</h1>
-      
-      {/* Компонент Profile */}
       <Profile
         name={userData.username}
         tag={userData.tag}
@@ -19,11 +18,7 @@ const App = () => {
         image={userData.avatar}
         stats={userData.stats}
       />
-      
-      {/* Компонент FriendList */}
       <FriendList friends={friends} />
-      
-      {/* Компонент TransactionHistory */}
       <TransactionHistory items={transactions} />
     </div>
   );
