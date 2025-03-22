@@ -7,9 +7,9 @@ const FriendListItem = ({ avatar, name, isOnline }) => {
     <div>
       <img src={avatar} alt={name} width="48" />
       <p className="name">{name}</p> {/* Додаємо клас для імені */}
-      <p className={`status ${isOnline ? 'online' : 'offline'}`}> {/* Додаємо клас для статусу */}
-        {isOnline ? 'Online' : 'Offline'}
-      </p>
+          <p className={`status ${isOnline ? 'online' : 'offline'}`}> {/* Використовуємо бектики для шаблонних рядків */}
+  {isOnline ? 'Online' : 'Offline'}
+</p>
     </div>
   );
 };
