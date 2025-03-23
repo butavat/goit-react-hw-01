@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './FriendList.css'; // Імпортуємо стилі
-import FriendListItem from './FriendListItem'; // Імпортуємо компонент FriendListItem
+import './FriendList.css';
+import FriendListItem from '../FriendListItem/FriendListItem';
 
 const FriendList = ({ friends }) => {
   return (
@@ -22,7 +22,7 @@ FriendList.propTypes = {
   friends: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.number.isRequired,
-      avatar: PropTypes.string, // Тепер avatar не обов'язковий
+      avatar: PropTypes.string,
       name: PropTypes.string.isRequired,
       isOnline: PropTypes.bool.isRequired,
     })
